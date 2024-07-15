@@ -64,6 +64,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    color: #f4f4f5;
+    background-color: #0e0e10;
   }
 }

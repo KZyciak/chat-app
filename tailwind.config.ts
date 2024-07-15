@@ -1,13 +1,13 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,6 +19,25 @@ const config = {
     },
     extend: {
       colors: {
+        bg: "#0E0E10",
+        element_bg: "#18181B",
+        element_border: "#52525B",
+        element_active: "#212124",
+        font: "#F4F4F5",
+        font_dimmed: "#D4D4D8",
+        main: {
+          "50": "#fffaec",
+          "100": "#fff3d3",
+          "200": "#ffe4a5",
+          "300": "#ffce6d",
+          "400": "#ffae32",
+          "500": "#ff930a",
+          "600": "#ff7b00",
+          "700": "#cc5902",
+          "800": "#a1450b",
+          "900": "#823b0c",
+          "950": "#461b04",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -53,11 +72,7 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
+
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -75,6 +90,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
